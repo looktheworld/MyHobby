@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>在视区内的元素水平垂直居中</title>
+		<style type="text/css">
+			.Fix-Center{
+				background-color: #00BFFF ;
+				position: fixed;
+				z-index: 999;
+			}
+			.Absolute_Center{
+				height: 300px;
+				width: 300px;
+			/*background: chocolate;*/
+				position: absolute;
+				overflow:auto; 
+				margin: auto;
+				left: 0; right: 0;
+				top: 0; bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="Fix-Center Absolute_Center"></div>
+	</body>
+</html>

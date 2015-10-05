@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>在固定宽和高的容器内居中</title>
+		<style type="text/css">
+			#parent{
+				height: 600px;
+				width: 600px;
+				position: relative;
+				background-color: deepskyblue;
+			}
+			.Absolute_Center{
+				width: 90%;
+				height: 90%;
+				position: absolute;
+				overflow: auto;
+				background-color:red;
+				margin: auto;
+				bottom: 0; top: 0;
+				right: 0; left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div class="Absolute_Center">
+				
+			</div>
+		</div>
+	</body>
+</html>

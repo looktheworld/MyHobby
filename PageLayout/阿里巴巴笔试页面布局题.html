@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>页面布局</title>
+		<style>
+			body{
+				margin: 0;
+			}
+			.fn-clear:after{
+				content: " ";
+				clear: both;	
+				display: block;
+				font-size: 0;
+				visibility: hidden;	
+				height: 0;		
+			}
+			.container{
+				margin: 10px;
+			}
+			.header{
+				background: #eee;
+				position: relative;
+				margin-bottom: 10px;
+			}
+			.logo{
+				width: 100px;
+				height: 100px;
+				float: left;
+				background: #f60;
+				margin: 10px;
+			}
+			.userName{
+				width: 150px;
+				height: 50px;
+				position: absolute;
+				right: 10px;
+				bottom: 10px;
+			}
+			.main{
+				min-height: 400px;
+			}
+			.side-bar{
+				width: 200px;
+				float: right;
+				min-height: 400px;
+				background: #808080;
+			}
+			.content{
+				min-height: 400px;
+				margin-right:210px ;
+				background: #00BFFF;
+			}			
+			footer{
+				margin: 10px 0 0 0;
+				background: #999;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header fn-clear">
+				<div class="logo">logo</div>
+				<div class="userName">搜索：<input type="text" placeholder="请输入姓名"/></div>
+			</div>	
+			<div class="main">
+				<div class="side-bar">aside-宽度200px</div>
+				<div class="content">content-自适应宽度</div>
+			</div>
+			<footer>footer</footer>
+		</div>		
+	</body>
+</html>

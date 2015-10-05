@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>中栏优先布局</title>
+		<style>			
+			.grid {
+			   display: -webkit-flex;
+			   display: -moz-flex;
+			   display: -o-flex;
+			   display: -ms-flex;
+			   display: flex;
+			 }
+			 .fluid {
+			   flex: 1;
+			   background: #00BFFF;
+			   min-height: 600px;
+			 }
+			 .fixed {
+			   width: 200px;
+			   background: chartreuse;
+			   min-height: 600px;
+			 }
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div class="fixed">left</div>
+			<div class="fluid">center</div>
+			<div class="fixed">right</div>			
+		</div>
+		
+	</body>
+</html>
